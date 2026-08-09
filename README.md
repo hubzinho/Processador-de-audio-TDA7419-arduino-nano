@@ -1,4 +1,4 @@
-# BUBU AUDIO
+# PROCESSADOR DE AUDIO TDA7419
 
 Controlador de áudio automotivo baseado no chip **TDA7419**, rodando em um **Arduino Nano**, com display **ST7735 (TFT 160x128)** via Ucglib e navegação por **encoder rotativo**.
 
