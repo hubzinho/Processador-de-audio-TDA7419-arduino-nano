@@ -34,6 +34,17 @@ Se o usuário entrar na opção **Input** com o Bluetooth ainda ativo, o firmwar
 | Controle Bluetooth  | D6                     |
 | TDA7419             | I2C (Wire)             |
 
+## VISTA DA PLACA + UI
+
+<img width="1256" height="1001" alt="IMG_20260809_111148 jpg" src="https://github.com/user-attachments/assets/847f82a7-17cd-4def-98ed-2bedccb0d3a4" />
+
+<img width="1256" height="1001" alt="IMG_20260809_111224 jpg" src="https://github.com/user-attachments/assets/48231170-d69a-48ca-bfc9-755fbb350f45" />
+
+<img width="1129" height="1077" alt="IMG_20260809_111250 jpg" src="https://github.com/user-attachments/assets/68968e35-0a36-4793-8c98-0f0686927354" />
+
+<img width="1046" height="973" alt="IMG_20260809_115747 jpg" src="https://github.com/user-attachments/assets/a4070c07-84a9-4e60-a2d4-bd803b5a7da8" />
+
+
 ## Dependências (Arduino Library Manager)
 
 - `Wire`
