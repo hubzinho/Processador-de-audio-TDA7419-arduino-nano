@@ -1,4 +1,4 @@
-
+//CODIGO FINAL
 #include <Wire.h>
 #include <TDA7419.h>
 #include <Encoder.h>
@@ -485,7 +485,8 @@ void applyAudio() {
   // O mixer está desligado (mix_en=0 no setMix_Gain_Eff), então Input2
   // não vai para a saída principal — mas precisa estar definido para não flutuar.
   tda.setInput2(safeInput, safeGain, 0);
-  tda.setAtt_loudness(lon, lon_f, 0, 0);
+  //tda.setInput2(0,0,0);
+  tda.setAtt_loudness(lon, lon_f, 2, 0);
   tda.setSoft(!mute, 0, 0, 0, 0);
   tda.setVolume(safeVol, 0);
   // Balance L/R simétrico: fr=0 centro, fr>0 empurra para direita (L atenua), fr<0 empurra para esquerda (R atenua)
@@ -584,7 +585,7 @@ void eqUI() {
 
     ucg.setFont(ucg_font_6x10_tr);
     ucg.setColor(CLR_ORANGE);
-    ucg.setPrintPos(52, 13);
+    ucg.setPrintPos(135, 70);
     ucg.print("EQ");
 
     // Labels das bandas (fixos, embaixo)
@@ -646,7 +647,7 @@ void simpleUI(const __FlashStringHelper* label, int val, const __FlashStringHelp
   ucg.setColor(CLR_BLACK);  ucg.drawBox(0, 0, 160, 128);
   ucg.setFont(ucg_font_7x13_tr);
   ucg.setColor(CLR_CYAN);   ucg.setPrintPos(55, 45); ucg.print(label);
-  ucg.setFont(ucg_font_ncenB18_tr);
+  ucg.setFont(ucg_font_ncenB14_tr);
   ucg.setColor(CLR_WHITE);  ucg.setPrintPos(65, 85);
   ucg.print(val); ucg.print(unit); ucg.print(F("  "));
 }
